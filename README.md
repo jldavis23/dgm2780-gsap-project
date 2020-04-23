@@ -2,7 +2,7 @@
 
 The URL used for the layout: https://www.minimalistmagnolia.com/
 
-URL to the completed website: 
+URL to the completed website: https://dgm2780-gsap.netlify.app/
 
 ## GSAP ANIMATIONS
 * Hero image text on page load on the home page
