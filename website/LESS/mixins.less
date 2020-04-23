@@ -1,0 +1,40 @@
+// Mixins
+
+.button-mixin(@bg-color, @font-color) {
+    background: @bg-color;
+    color: @font-color;
+    border: 1px solid @bg-color;
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.4rem;
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        color: @bg-color;
+        background: @font-color;
+    }
+}
+
+.section-mixin {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 70px;
+    border-bottom: 1px solid @accent-color;
+}
+
+.title-mixin {
+    text-align: center;
+    font-size: 3rem;
+    margin: 70px 0;
+}
+
+.figcaption-mixin(@font-size) {
+    font-size: @font-size;
+    margin: 10px;
+    color: @accent-color;
+    font-weight: 600;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px 30px;
+
+    figure:hover {
+        span {
+            transform: translateY(10px);
+            transition: all 0.35s ease-in-out;
+            opacity: 1;
+        }
+
+        img {
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+    }
+
+    img {
+        width: 100%;
+        transition: all 0.35s ease-in-out;
+    }
+
+    img:hover {
+        cursor: pointer; 
+    }
+
+    figcaption {
+        .figcaption-mixin(1.6rem);
+        text-transform: uppercase;
+
+        span {
+            display: block;
+            opacity: 0;
+            font-weight: 400;
+        }
+    }
+
+    @media @tablet {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media @phone {
+        grid-template-columns: 1fr 1fr;
+    }
+}

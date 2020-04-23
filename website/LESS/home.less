@@ -1,0 +1,223 @@
+// Home Page Styles
+
+* {
+    font-family: @body-font;
+}
+
+.home nav {
+    border: none;
+}
+
+section>h1 {
+    .title-mixin();
+}
+
+// HERO IMAGE
+.section-hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 4%;
+
+    div {
+        .section-mixin();
+        padding: 0;
+        border: none;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color: #fff;
+        margin: 16px 0;
+    }
+
+    .button {
+        .button-mixin(@main-color, #fff);
+        border: none;
+    }
+
+    @media @phone {
+        text-align: center;
+    }
+}
+
+// STAFF PICKS
+.section-staff-picks {
+    .section-mixin();
+    text-align:center;
+
+    .button {
+        .button-mixin(@main-color, #fff);
+        margin: 20px 0;
+    } 
+}
+
+// PRODUCT FEATURES
+.section-product-features {
+    .section-mixin();
+
+    img {
+        width: 100%;
+    }
+
+    .features-figure {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+        @media @phone {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .features-description {
+        text-align: center;
+
+        figure {
+            padding: 50px;
+        }
+        figcaption {
+            .figcaption-mixin(1.6rem);
+        }
+        span {
+            display: block;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+    }
+
+    .button {
+        .button-mixin(@main-color, #fff);
+    } 
+}
+
+// SERVICES
+.section-services {
+    .section-mixin();
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding-top: 70px;
+
+    .service-card {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .button {
+            .button-mixin(@main-color, #fff);
+            position: absolute;
+            bottom: 40px;
+            top: auto;
+            left: 0;
+            margin-left: 30px;
+            border: none;
+        }
+    }
+
+    @media @tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media @phone {
+        grid-template-columns: 1fr;
+    }
+}
+
+// CURRENT FAVORITE SECTION
+.section-current-favorite {
+    .section-mixin();
+
+    img {
+        width: 100%;
+    }
+
+    .favorite-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .favorite-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: @accent-color;
+        }
+
+        span {
+            display: block;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+    }
+
+    .button {
+        .button-mixin(@main-color, #fff);
+    }
+}
+
+// FOLLOW SECTION
+.section-follow {
+    .section-mixin();
+    text-align: center;
+    border: none;
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 70px;
+    }
+
+    .button {
+        .button-mixin(@main-color, #fff);
+    }
+}
+
+// MAKE IT YOUR OWN SECTION
+.section-your-own {
+    background-image: url('../images/yourown.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+
+    .picture-cover {
+        padding: 200px;
+        display: flex;
+        justify-content: center;
+
+        @media @tablet {
+            padding: 200px 100px;
+            div {
+                width: 100%;
+            } 
+        }
+
+        @media @phone {
+            padding: 200px 0;
+        }
+
+        div {
+            background-color: rgba(255, 255, 255, 0.747);
+            width: 50%;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin-top: 20px;
+        }
+    }
+}
