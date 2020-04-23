@@ -22,7 +22,7 @@ gsap.from(".bike-card", {
 });
 
 
-// SHOP THIS LOOK ANIMATIONS
+// PRODUCT FEATURES ANIMATIONS
 gsap.to(".circle-outline", 1, {
     scale: 0.9, 
     yoyo: true, 
