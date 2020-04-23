@@ -24,17 +24,23 @@ section>h1 {
         .section-mixin();
         padding: 0;
         border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     h1 {
         font-size: 3.5rem;
         color: #fff;
         margin: 16px 0;
+        display: inline-block;
     }
 
     .button {
         .button-mixin(@main-color, #fff);
         border: none;
+        margin: 0;
     }
 
     @media @phone {
@@ -90,6 +96,52 @@ section>h1 {
         .button-mixin(@main-color, #fff);
     } 
 }
+
+.product-figure {
+    position: relative;
+}
+
+.circle-outline {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background: rgba(255,255,255,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-indicator {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.circle-indicator:hover {
+    transform: scale(1.2);
+}
+
+#outline1 {
+    left: 70%;
+    top: 80%;
+}
+
+#outline2 {
+    left: 53%;
+    top: 8%;
+}
+
+#outline3 {
+    left: 29%;
+    top: 35%;
+}
+
+
 
 // SERVICES
 .section-services {

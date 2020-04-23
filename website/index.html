@@ -25,64 +25,64 @@
 
 		<section class="section-hero">
 			<div>
-				<h1>Premium Bikes</h1>
-				<div class="button">SHOP NOW</div>
+				<h1 class="hero-title">Premium Bikes</h1>
+				<div class="button hero-button">SHOP NOW</div>
 			</div>
 		</section>
 
 		<section class="section-staff-picks">
 			<h1>STAFF PICKS</h1>
 			<div class="gallery">
-				<figure>
+				<figure class="bike-card">
 					<img src="images/gallery/bike1.jpg" alt="Image of Bike 1">
 					<figcaption>
 						Bike 1 <span>$5000</span>
 					</figcaption>
 				</figure>
 
-				<figure>
+				<figure class="bike-card">
 					<img src="images/gallery/bike2.jpg" alt="Image of Bike 2">
 					<figcaption>
 						Bike 2 <span>$5700</span>
 					</figcaption>
 				</figure>
 
-				<figure>
+				<figure class="bike-card">
 					<img src="images/gallery/bike3.jpg" alt="Image of Bike 3">
 					<figcaption>
 						Bike 3 <span>$4500</span>
 					</figcaption>
 				</figure>
 
-				<figure>
+				<figure class="bike-card">
 					<img src="images/gallery/bike4.jpg" alt="Image of Bike 4">
 					<figcaption>
 						Bike 4 <span>$3000</span>
 					</figcaption>
 				</figure>
 
-				<figure>
+				<figure class="bike-card">
 					<img src="images/gallery/bike5.jpg" alt="Image of Bike 5">
 					<figcaption>
 						Bike 5 <span>$7800</span>
 					</figcaption>
 				</figure>
 
-				<figure>
+				<figure class="bike-card">
 					<img src="images/gallery/bike6.jpg" alt="Image of Bike 6">
 					<figcaption>
 						Bike 6 <span>$3400</span>
 					</figcaption>
 				</figure>
 
-				<figure>
+				<figure class="bike-card">
 					<img src="images/gallery/bike7.jpg" alt="Image of Bike 7">
 					<figcaption>
 						Bike 7 <span>$6600</span>
 					</figcaption>
 				</figure>
 
-				<figure>
+				<figure class="bike-card">
 					<img src="images/gallery/bike8.jpg" alt="Image of Bike 8">
 					<figcaption>
 						Bike 8 <span>$5780</span>
@@ -96,11 +96,23 @@
 		<section class="section-product-features">
 			<h1>PRODUCT FEATURES</h1>
 			<div class="features-figure">
-				<img src="images/bike-model.jpg" alt="Image of a man on a bike">
+				<figure class="product-figure">
+					<img src="images/bike-model.jpg" alt="Image of a man on a bike">
+					<div class="circle-outline" id="outline1">
+						<div class="circle-indicator" id="indicator1"></div>
+					</div>
+					<div class="circle-outline" id="outline2">
+						<div class="circle-indicator" id="indicator2"></div>
+					</div>
+					<div class="circle-outline" id="outline3">
+						<div class="circle-indicator" id="indicator3"></div>
+					</div>
+				</figure>
+				
 				<div class="features-description">
 					<figure>
-						<img src="images/wheel.jpg" alt="Image of a bicycle wheel">
-						<figcaption>PREMIUM WHEELS <span>$60</span></figcaption>
+						<img src="images/wheel.jpg" alt="Image of a bicycle wheel" class="product-picture">
+						<figcaption class="product-title">PREMIUM WHEELS <span>$60</span></figcaption>
 					</figure>
 					<div class="button">VIEW THIS PRODUCT</div>
 				</div>
@@ -127,7 +139,7 @@
 		<section class="section-current-favorite">
 			<h1>OUR CURRENT FAVORITE</h1>
 			<div class="favorite-wrapper">
-				<img src="images/favorite.jpg" alt="Image of a black bike">
+				<img class="pick-pic" src="images/favorite.jpg" alt="Image of a black bike">
 				<div class="favorite-description">
 					<h2>PREMIUM MOUNTAIN BIKE <span>$7500</span></h2>
 					<div class="button">ADD TO CART</div>
@@ -157,6 +169,7 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
 	<script type="text/javascript" src="js/index.js"></script>	
 </body>
 </html>
